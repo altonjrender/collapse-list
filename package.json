@@ -1,0 +1,19 @@
+{
+  "name": "pc-collapse",
+  "version": "0.0.1",
+  "description": "used to create a drop-down list of items",
+  "main": "main.js",
+  "scripts": {
+    "test": "/my/pc-collapse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arenderutsa/collapse-list.git"
+  },
+  "author": "Alton Render",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arenderutsa/collapse-list/issues"
+  },
+  "homepage": "https://github.com/arenderutsa/collapse-list#readme"
+}
