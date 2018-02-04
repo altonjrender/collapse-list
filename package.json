@@ -3,8 +3,18 @@
   "version": "0.0.1",
   "description": "used to create a drop-down list of items",
   "main": "main.js",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "latest",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
   "scripts": {
-    "test": "/my/pc-collapse"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
