@@ -1,13 +1,12 @@
 {
-  "name": "my-app",
+  "name": "my-collapse",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "classnames": "^2.2.5",
-    "lodash": "latest",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "prop-types": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
