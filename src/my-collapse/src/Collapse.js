@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import './css/dropdown.css';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import {
+    arrow,
+    toggleDisplay
+} from './helper';
 
 export default class Collapse extends Component {
     constructor(props) {
@@ -53,24 +57,24 @@ export default class Collapse extends Component {
         try {
             const {title, children} = this.props;
             const {isOpened} = this.state;
-
-
-            let toggleDisplay = classnames(
-                {'dropdown-content-open': isOpened},
-                {'dropdown-content-closed': !isOpened}
-            );
-//TODO: tryt o provide it as an image
-            let arrow = isOpened ?
-                <div className="icon">&#709;</div> :
-                <div className="icon">&#708;</div>;
-            console.log(isOpened);
+//
+//
+//             let toggleDisplay = classnames(
+//                 {'dropdown-content-open': isOpened},
+//                 {'dropdown-content-closed': !isOpened}
+//             );
+// //TODO: tryt o provide it as an image
+//             let arrow = isOpened ?
+//                 <div className="icon">&#709;</div> :
+//                 <div className="icon">&#708;</div>;
+//             console.log(isOpened);
             return (
                 <div className="dropdown-container">
                     <div className="title-icon-bordershadow title-icon-container" onClick={this.onClick}>
                         {title}
-                        {arrow}
+                        {arrow(isOpened)}
                     </div>
-                    <div className={toggleDisplay}>
+                    <div className={toggleDisplay(isOpened)}>
                         {children}
                     </div>
                 </div>
